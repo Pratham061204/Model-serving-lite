@@ -1,0 +1,49 @@
+{
+  "baseline_accuracy": 0.8,
+  "candidate_accuracy": 1.0,
+  "promote": true,
+  "predictions": [
+    {
+      "text": "I love this product",
+      "expected": "POSITIVE",
+      "predicted": "POSITIVE",
+      "confidence": 0.9998788833618164,
+      "correct": true
+    },
+    {
+      "text": "This app is amazing",
+      "expected": "POSITIVE",
+      "predicted": "POSITIVE",
+      "confidence": 0.9998718500137329,
+      "correct": true
+    },
+    {
+      "text": "The service was excellent",
+      "expected": "POSITIVE",
+      "predicted": "POSITIVE",
+      "confidence": 0.9998462200164795,
+      "correct": true
+    },
+    {
+      "text": "I hate this experience",
+      "expected": "NEGATIVE",
+      "predicted": "NEGATIVE",
+      "confidence": 0.9995409250259399,
+      "correct": true
+    },
+    {
+      "text": "This product is terrible",
+      "expected": "NEGATIVE",
+      "predicted": "NEGATIVE",
+      "confidence": 0.9997355341911316,
+      "correct": true
+    },
+    {
+      "text": "The app is slow and broken",
+      "expected": "NEGATIVE",
+      "predicted": "NEGATIVE",
+      "confidence": 0.9997891783714294,
+      "correct": true
+    }
+  ]
+}

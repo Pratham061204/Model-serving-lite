@@ -1,0 +1,41 @@
+name: Retrain and Evaluate
+
+on:
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "data/**"
+      - "training/**"
+      - ".github/workflows/retrain.yml"
+  workflow_dispatch:
+
+jobs:
+  retrain-evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install app dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install transformers "numpy<2"
+
+      - name: Retrain candidate model
+        run: python training/retrain.py
+
+      - name: Evaluate candidate model
+        run: python training/evaluate.py
+
+      - name: Upload evaluation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-report
+          path: training/evaluation_report.json
