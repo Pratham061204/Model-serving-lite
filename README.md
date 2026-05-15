@@ -15,6 +15,10 @@ pinned: false
 **Repo:** https://github.com/Pratham061204/Model-serving-lite 
 **Demo video:** <PASTE_YOUR_DEMO_VIDEO_LINK_AFTER_RECORDING>
 
+## Demo GIF
+
+![Case 9 demo](assets/case9-demo.gif)
+
 ## What this is
 
 This project converts a notebook-style sentiment classifier into a deployable, monitored API service.
