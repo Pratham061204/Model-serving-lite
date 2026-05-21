@@ -13,7 +13,7 @@ pinned: false
 **Live demo:** https://pratham06-case9-model-serving-lite.hf.space/docs 
 **API docs:** https://pratham06-case9-model-serving-lite.hf.space/docs#/default/predict_predict_post 
 **Repo:** https://github.com/Pratham061204/Model-serving-lite 
-**Demo video:** <https://www.loom.com/share/430eca8cfea34688a28769d3ae674b23>
+**Demo video:** <https://www.loom.com/share/3c91f51294fe4442a006d5224ed3f2b7>
 
 ## Demo GIF
 
